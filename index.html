@@ -1,0 +1,641 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="keywords" content="government, government schemes, scholarships">
+	   
+	    <meta http-equiv="cache-control" content="max-age=0" />
+		<meta http-equiv="cache-control" content="no-cache,no-store" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" /> 
+		<meta http-equiv="pragma" content="no-cache,no-store" />
+	   
+	    <!-- Page Title -->
+	    <title>Direct Benefit Transfer</title>
+	    <link rel="shortcut icon" href="resources/images/favicon.ico">
+	    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="css/DT_bootstrap.css">
+		<!-- Material CSS -->
+		<link rel="stylesheet" type="text/css" href="css/angular-material.min.css">
+		<!-- Home Page Stylesheets-->
+		<link type="text/css" rel="stylesheet" id="Basic" href="css/Customstyle.css"  />
+		<link type="text/css" rel="stylesheet" href="css/font-awesome.css" />
+		<link type="text/css" rel="stylesheet" href="css/captcha.css"  />
+		<link type="text/css" rel="stylesheet" href="css/responsive.css" />
+		<link rel="stylesheet" media="all" href="css/Schemestyle.css" >
+	    <link rel="stylesheet" media="all" href="css/Schemeresponsive.css" >
+	    <link rel="stylesheet" media="all" href="css/Faq.css">		
+	    <link rel="stylesheet" media="all" href="css/about_us.css">		
+	    <link rel="stylesheet" media="all" href="css/rti.css">		
+	    <link rel="stylesheet" media="all" href="css/knowledge_bank.css">		
+	    <link href="css/Grievance.css" rel="stylesheet">
+	
+	        
+	   	<!--right slidebar-->
+	    <link href="css/slidebars.css" rel="stylesheet">
+	    
+	
+	    <!--right wow slider-->
+	    <link rel="stylesheet" type="text/css" href="engine1/wowsliderstyle.css" />
+	    <script type="text/javascript" src="engine1/jquery.js"></script>
+	
+	    <!-- Custom styles for this template -->
+	    <link href="css/style.css" rel="stylesheet">
+	    <link href="css/style-responsive.css" rel="stylesheet">
+	      <link href="css/nav.css" rel="stylesheet">
+		
+		
+		<script src="js/jquery-1.js"></script>
+		<script src="resources/js/angular.js"></script>
+		<script src="resources/js/angular-route.js"></script>
+		<script src="resources/js/angular-cookies.js"></script>
+		<script src="resources/js/angular-sanitize.js"></script>
+		<script src="resources/js/angular-localization.js"></script>
+		<script src="resources/js/angular-animate.min.js"></script>
+		<script src="resources/js/angular-aria.min.js"></script>
+		<script src="resources/js/angular-messages.min.js"></script>
+		<script src="resources/js/moment.min.js"></script> 
+		<script type="text/javascript" src='https://rawgithub.com/gsklee/ngStorage/master/ngStorage.js'></script>
+		 <script src="js/nav.js"></script> 
+        <script src="js/nav1.js"></script> 
+		<!-- Material JS -->
+		<script src="resources/js/angular-material.min.js"></script>	
+		
+		<!-- Chart -->
+		<!-- <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script src="https://www.amcharts.com/lib/3/pie.js"></script>
+		<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+		<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+		<script src="https://www.amcharts.com/lib/3/themes/light.js"></script> -->
+		
+		<script src="amcharts/amcharts.js"></script>
+		<script src="amcharts/pie.js"></script>
+		<script src="amcharts/export.min.js"></script>
+		<link rel="stylesheet" href="amcharts/export.css" type="text/css" media="all" />
+		<script src="amcharts/light.js"></script>
+	
+	    <script type="text/javascript">
+    
+	        function onClickofContrastCSS(flag) //
+	        {
+	            if (flag == "Contrast") //
+	            {
+	                if ($("#Basic").attr("href") != "css/Contrast.css") //
+	                {
+	                    $("#Basic").attr("href", "css/Contrast.css");
+	                }
+	                else //
+	                {
+	                    $("#Basic").attr("href", "css/Customstyle.css");
+	                }
+	            }           
+	            return false;
+			}
+	    </script>  
+	    
+	</head>
+
+<body ng-app="DBTProj" ng-controller="SuperController"  class="cl-default fixed">    
+		<section id="container" >  
+	<div role="banner" aria-label="region">
+		    <header class="container" >
+		        <div class="row" id="topbar" role="navigation" aria-label="primary">         
+		            <div  class="col-lg-2 col-md-2 col-sm-2 col-xs-2 CommonFeatures" ng-show="topSlidebar">
+		        		<a id="back-to-top" href="javascript:void(0);" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>		      			
+		       	 	</div>
+		       	 	
+		            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 CommonFeatures">
+		                <ul>
+		                    <li id="skiptomain" tabindex="1"><a title="skiptomaincontent" data-i18n="header.header_data_content1" style="cursor:pointer;">Skip to main content</a></li>
+		                    <li id="screnreader" tabindex="2"><a title="Screen Reader Access" style="cursor:pointer;" data-i18n="header.header_data_content2" ng-click="FlipCenterDivContent('SRA');">Screen Reader Access</a></li>               
+		                    <li id="contrst" tabindex="3"><m data-i18n="header.header_data_content3">Black Theme:</m><a href="javascript:void(0);" aria-label="Black Theme" title="Black Theme" onclick="onClickofContrastCSS('Contrast');"><span id="ContrastHighlight"></span></a></li>
+		                <!--    <li><m data-i18n="header.header_data_content4">Color Schemes</m><span><a href="#" onclick="onClickofColorCSS('Teal');" title="Teal Theme" id="colorscheme1"></a></span><span><a href="#" title="Purple Theme" id="colorscheme2" onclick="onClickofColorCSS('Purple');"></a></span></li>-->
+		                    <li id="IncDec"><a href="javascript:void(0);" aria-label="Decrease font size" title="Decrease font size" onclick="decreaseFontSize()"><sup>-</sup>A</a>
+		                    <a href="javascript:void(0);" aria-label="Normal font size" title="Normal font size" onclick="defaultFontSize()">A</a>
+		                    <a href="javascript:void(0);" aria-label="Increase font size" title="Increase font size" onclick="increaseFontSize()"><sup>+</sup>A</a></li>
+							<li><label>Languages</label>
+                             <select ng-init="mr"  ng-model="lang"  ng-change="setLocale(lang);setlangLocale(lang);"  >
+	                            <!--   <option value="" selected disabled>Select Language</option> -->
+	                              <option value="mr" >मराठी</option>
+	                              <option value="en-US">English</option>
+                       </select></li>
+		                </ul>
+		            </div>
+		            
+		        </div>
+		         <div class="col-lg-12 header">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 leftheader">
+                    <a href="https://aaplesarkar.maharashtra.gov.in/en/" target="_blank" rel="noopener noreferrer" title="An extenal link for national portal of india opening in new window"><img src="resources/images/aaple-sarkaar.png" alt="aaplesarkar" class="img-responsive"></a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 centerheader center-block">
+                    <h1 style="text-align: center;">MahaDBT</br><span style="font-size:14px;">Government of Maharashtra</span></h1>                    
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 rightheader">
+                  <a href="https://www.maharashtra.gov.in/1125/Home" target="_blank" rel="noopener noreferrer" title="An extenal link for national portal of india opening in new window"><img src="resources/images/mg-logo.png" alt="mahagov" class="img-responsive"></a>
+                </div>
+            </div>
+
+		    </header>
+     
+		    <Nav class="container" id="topnavigation" ng-show="homeId">
+                <div>
+                    <div>
+                        <div id="cssmenu">
+                            <div id="indicatorContainer">
+                                <div id="pIndicator" style="left: 388.875px;">
+                                    <div id="cIndicator"></div>
+                                </div>
+                            </div>
+                            <ul class="navi navi1" aria-hidden="false">
+                                <li class="navactive"><a href="#/" ng-click="FlipCenterDivContent('home');"><i class="fa fa-home navspace" aria-hidden="true"></i><span data-i18n="header.header_home">Home</span></a></li>
+                                <li><a href="" ng-click="FlipCenterDivContent('rti');"><i class="fa fa-database navspace" aria-hidden="true"></i><span data-i18n="header.header_rti">RTI</span></a></li>
+                                <li><a href="" ng-click="FlipCenterDivContent('grievance');"><i class="fa fa-gavel" aria-hidden="true"></i> <span data-i18n="header.header_grievance">Grievance</span></a></li>
+                                <li><a href="" ng-click="FlipCenterDivContent('knowledgebank');"><i class="fa fa-cogs navspace" aria-hidden="true"></i><span data-i18n="header.header_knowledge">Knowledge Bank</span></a></li>
+                                <li class="active has-sub">
+                                    <a style="cursor:pointer;" aria-expanded="false">
+                                        <i class="fa fa-question-circle navspace"></i>
+                                        <span data-i18n="header.header_help">Help</span>
+                                    </a>
+   									<ul>
+                                        <li><a href="{{dbtDocumentPath}}/DBTDocs/Flipbook_new/mobile/index.html" aria-label="An External link opening in a new page" target="_blank"><span data-i18n="header.header_helpbook">Helpbook</span></a></li>
+                                        <li><a href="" ng-click="FlipCenterDivContent('faq');"><span data-i18n="header.header_faq">FAQ</span></a></li>
+                                         <li class="active has-sub">
+                                               <a href="" target="_blank"><span data-i18n="header.header_UserManual">User Manual</span></a>
+                                               <ul>
+                                                   <li><a href="{{dbtDocumentPath}}/DBTDocs/User_Manual_ResidentUser_Marathi.pdf" aria-label="PDF, 3.85MB, Opens in a new window" target="_blank"><span>Resident_Marathi</span></a></li>
+                                                   <li><a href="{{dbtDocumentPath}}/DBTDocs/User_Manual_ResidentUser_English.pdf" aria-label="PDF, 4.41MB, Opens in a new window" target="_blank"><span>Resident_English</span></a></li>
+                                                   <li><a href="{{dbtDocumentPath}}/DBTDocs/User_Manual_Department_Marathi.pdf" aria-label="PDF, 1,095KB, Opens in a new window" target="_blank"><span>Department_Marathi</span></a></li>
+                                                   <li><a href="{{dbtDocumentPath}}/DBTDocs/User_Manual_Department_English.pdf" aria-label="PDF, 897KB, Opens in a new window" target="_blank"><span>Department_English</span></a></li>                                                    
+                                               </ul>
+                                           </li>  
+                                            <li class="active has-sub">
+                                               <a href="" target="_blank"><span data-i18n="header.header_video">Help Video</span></a>
+                                               <ul>
+                                                   <li><a href="https://www.youtube.com/watch?v=vjOhFlSH-RE" aria-label="An External link opening in a new page" target="_blank"><span data-i18n="header.header_video1">Video1</span></a></li>
+                                                   <li><a href="https://www.youtube.com/watch?v=Da7YTd5Yzyg&t=2s" aria-label="An External link opening in a new page" target="_blank"><span data-i18n="header.header_video2">Video2</span></a></li>
+                                               </ul>
+                                           </li>                                               
+                                    </ul>
+                                </li>
+                                <li><a href="" ng-click="FlipCenterDivContent('aboutus');" aria-label="About Us"><i class="fa fa-user navspace" aria-hidden="true"></i><span data-i18n="header.header_aboutus">About US</span></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </Nav>
+
+</div>
+    		<!--sidebar start-->
+     		<div ng-cloak ng-show="sidemenubar" class="container sidebarpositn">
+     			<div>     				
+     				<div ng-show="residentMenu" aria-label="Dashboard Menu Clickable">
+                         <div id="menu-toggle" class="sidebar-toggle-box sidebar-toggle-color" style="margin-left: 210px;background: #046ba3;margin-top: 0;position : fixed;top : 100px;z-index : 999;">
+                             <i class="fa fa-bars" aria-hidden="true"></i>
+                         </div>
+                         <div tabindex="0" style="overflow: hidden;" id="sidebar" class="nav-collapse ">
+                             <div class="user-panel user-panel-marg">
+                                 <!-- Tab panes -->
+                                 <div class="tab-content">
+                                     <div class="tab-pane active" id="user">
+                                         <div class="image">
+                                             <img ng-src="{{userimage}}" class="img-circle" alt="">
+                                             <i class="fa fa-user-circle" aria-hidden="true"></i>
+                                         </div>
+                                         <div class="info wht-color">
+                                             <p><span data-i18n="dashBoard.db_hello">Hello</span></p><p><span>{{displayname}}</span></p>
+                                             <!--<small style="color: #eee;" data-i18n="dashBoard.db_wel_back">Welcome Back</small>-->
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <ul class="nav nav-tabs nav-tabs-paddng nav_res_profile" role="tablist">
+                                     <li><a href="#/route_editProfile" role="tab" data-toggle="tab" aria-label="View Profile"><i class="fa fa-pencil wht-color" aria-hidden="true"></i></a></li>
+                                     <li><a href="#/route_changepwd" role="tab" data-toggle="tab" aria-label="Change Password"><i class="fa fa-pencil-square-o wht-color" aria-hidden="true"></i></a></li>
+                                     <li data-ng-controller="stu_Dash_logout">
+                                         <a data-ng-click="invalidateLogin()" role="tab" data-toggle="tab" aria-label="Logout">
+                                             <i class="fa fa-power-off wht-color" aria-hidden="true"></i>
+                                         </a>
+                                     </li>
+                                 </ul>
+                             </div>
+                             <ul class="sidebar-menu" id="nav-accordion" role="navigation">
+                              <li>
+                                     <!-- <a href="#/route_inst_dashboard"> -->
+                                     <a href="#/welcomeResident" class="active">
+                                         <i class="fa fa-bullhorn" aria-hidden="true"></i><span data-i18n="header.header_home">Home</span>
+                                     </a>
+                                 </li>
+                                 <li class="sub-menu dcjq-parent-li">
+                                     <a class="dcjq-parent" href="javascript:;">
+										<i class="fa fa-info-circle" aria-hidden="true"></i><span data-i18n="dashBoard.db_schemeinfo">Scheme Information</span>                                         <span class="dcjq-icon"></span>
+                                     </a>
+                                     <ul style="display: none;" class="sub">
+                                           <li class="sub-menu dcjq-parent-li"><a ><span data-i18n="dashBoard.db_department">Department</span></a>
+                                             <ul style="display: none;" class="sub">
+                                                 <li><a href="javascript:;" ng-click="getDept('Higher and Technical Education','showViewButton');"><span data-i18n="dashBoard.db_scheme1">Higher and Technical Education</span></a></li>
+                                                 <li><a href="javascript:;" ng-click="getDept('Minorities Development','showViewButton');"><span data-i18n="dashBoard.db_scheme2">Minorities Development</span></a></li>
+                                                 <li><a href="javascript:;" ng-click="getDept('School Education','showViewButton');"><span data-i18n="dashBoard.db_scheme3">School Education</span></a></li>                                                 
+                                                 <li><a href="javascript:;" ng-click="getDept('Social Justice & Special Assistance (Scheduled Caste)','showViewButton');"><span data-i18n="dashBoard.db_scheme7">Social Justice & Special Assistance (Scheduled Caste)</span></a></li>
+                                                <li><a href="javascript:;" ng-click="getDept('Tribal Development Department','showViewButton');"><span data-i18n="dashBoard.db_scheme5">Tribal Development Department</span></a></li>
+                                             	<li><a href="javascript:;" ng-click="getDept('Vimukta Jati, Nomedic Tribes, Other Backward Class and Special Backward Class Welfare Department','showViewButton');"><span data-i18n="dashBoard.db_scheme4">VJNT, OBC, SBC Welfare Department</span></a></li>
+                                             </ul>
+                                            </li>
+                                           
+                               			<li class="sub-menu dcjq-parent-li"><a><span data-i18n="dashBoard.db_category">Category</span></a>
+	                                         <ul style="display: none;" class="sub">
+                                                 <li><a href="javascript:;" ng-click="getCategory('showViewButton');" data-i18n="dashBoard.db_categry1">E-Scholarship</a></li>
+	                                          </ul>
+                                         </li>
+                                     </ul>
+                                 </li>
+                                 <li class="sub-menu dcjq-parent-li">
+                                     <a class="dcjq-parent" href="javascript:;">
+                                         <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                         <span data-i18n="dashBoard.db_chkeligibility">Check Eligibility</span>
+                                         <span class="dcjq-icon"></span>
+                                     </a>
+                                     <ul style="display: none;" class="sub">
+                                         <li><a ng-click="showApplyScheme('showCheckElig');"><span data-i18n="dashBoard.db_categry1">E-Scholarship</span></a></li>
+                                     </ul>
+                                 </li>
+                                 <li class="sub-menu dcjq-parent-li">
+									<a  class="dcjq-parent" href="javascript:;">
+                                         <i class="fa fa-check-square-o" aria-hidden="true"></i><span data-i18n="ResDashboard.ResDashboard_applySchme">Apply Scheme</span>
+                                         <span class="dcjq-icon"></span>
+                                   	</a>
+                                  <!--    <ul style="display: none;" class="sub">
+                                         <li><a ng-click="showApplyScheme('showCheckElig');" href="javascript:;" data-i18n="header.header_department">Department</a></li>
+                                         <li><a ng-click="showApplyScheme('hideCheckElig');" href="javascript:;">Category</a></li>
+                                     </ul> -->
+                                      <ul style="display: none;" class="sub">
+                                         <li class="sub-menu dcjq-parent-li"><a><span data-i18n="dashBoard.db_department">Department</span></a>
+                                             <ul style="display: none;" class="sub">
+                                                 <li><a href="javascript:;" ng-click="getDept('Higher and Technical Education','showApplyButton');"><span data-i18n="dashBoard.db_scheme1">Higher and Technical Education</span></a></li>
+                                                 <li><a href="javascript:;" ng-click="getDept('Minorities Development','showApplyButton');"><span data-i18n="dashBoard.db_scheme2">Minorities Development</span></a></li>
+                                                 <li><a href="javascript:;" ng-click="getDept('School Education','showApplyButton');"><span data-i18n="dashBoard.db_scheme3">School Education</span></a></li>                                                 
+                                                 <li><a href="javascript:;" ng-click="getDept('Social Justice & Special Assistance (Scheduled Caste)','showApplyButton');"><span data-i18n="dashBoard.db_scheme7">Social Justice & Special Assistance (Scheduled Caste)</span></a></li>
+                                                 <li><a href="javascript:;" ng-click="getDept('Tribal Development Department','showApplyButton');"><span data-i18n="dashBoard.db_scheme5">Tribal Development Department</span></a></li> 
+                                                 <li><a href="javascript:;" ng-click="getDept('Vimukta Jati, Nomedic Tribes, Other Backward Class and Special Backward Class Welfare Department','showApplyButton');"><span data-i18n="dashBoard.db_scheme4">Vimukta Jati, Nomedic Tribes, Other Backward Class and Special Backward Class Welfare Department</span></a></li>                                                
+                                             </ul>
+                                           </li>
+                                         <li href="javascript:;" class="sub-menu dcjq-parent-li"><a><span data-i18n="dashBoard.db_category">Category</span></a>
+                                         <ul style="display: none;" class="sub">
+                                                 <li><a href="javascript:;" ng-click="getCategory('showApplyButton');" data-i18n="dashBoard.db_categry1">E-Scholarship</a></li>
+                                          </ul>
+                                         </li>
+                                     </ul>
+                                 </li>
+                                  <li>
+                                     <a ng-click="showDashboard('showNotification');" href="javascript:;">
+                                         <i class="fa fa-bullhorn"></i><span  data-i18n="ResDashboard.ResDashboard_notification">Notifications </span>({{notificationCount}})
+                                     </a>
+                                 </li>
+                                 
+                                 <li>
+                                     <a ng-click="showDashboard('showPendingAction');" href="javascript:;">
+                                         <i class="fa fa-exclamation-circle"></i><span data-i18n="ResDashboard.ResDashboard_pending">Pending For Actions </span>({{pendingActionCount}})
+                                     </a>
+                                 </li>
+                              
+                                 <li>
+                                     <a ng-click="showDashboard('showAppliedAction');" href="javascript:;">
+                                         <i class="fa fa-dashboard"></i><span data-i18n="ResDashboard.ResDashboard_appliedSchme">Applied Schemes </span>({{appliedActionCount}})
+                                     </a>
+                                 </li>
+                                 <li class="sub-menu dcjq-parent-li">
+                                     <a class="dcjq-parent" href="#/route_track">
+                                         <i class="fa fa-file-text-o"></i>
+                                         <span data-i18n="dashBoard.db_apptrack" aria-label="Application Tracker">Application Tracker</span>
+                                     </a>
+                                 </li>                                
+                                 <li class="sub-menu dcjq-parent-li">
+                                     <a class="dcjq-parent" href="#/repository">
+                                         <i class="fa fa-tasks"></i>
+                                         <span data-i18n="dashBoard.db_docRep" aria-label="Document Repository">Document Repository</span>
+                                     </a>
+                                 </li>   
+                                 
+                                  <li class="sub-menu dcjq-parent-li">
+                                     <span ng-click="OpenGrievance();">
+                                     <a class="dcjq-parent">
+                                         <i class="fa fa-gavel"></i>
+                                         <span data-i18n="header.header_grievance" aria-label="Grievance">Grievance</span>
+                                     </a>
+                                     </span>
+                                 </li>   
+                                                           
+	   <!--Added by Swati For User Manual
+	                                 <li class="sub-menu dcjq-parent-li">
+	                                     <a class="dcjq-parent" href="javascript:;">
+	                                         <i class="fa fa-book"></i>
+	                                         <span data-i18n="dashBoard.db_usermanual">User Manual</span>
+	                                         <span class="dcjq-icon"></span>
+	                                     </a>
+	                                     <ul style="display: none;" class="sub">
+	                                         <li><a ng-click="showApplyScheme('showCheckElig');"><span data-i18n="dashBoard.db_usermanualdownld">Download User Manual</span></a></li>
+	                                     </ul>
+	                                 </li>
+	                                 Added by Swati For User Manual End-->
+			
+
+                             </ul>
+                         </div>
+                     </div>
+
+                    <div ng-show="instituteMenu">
+                        <div id="menu-toggle1" class="sidebar1-toggle-box sidebar-toggle-color" style="margin-left: 210px;background: #046ba3;margin-top: 0;margin-top: 0;position : fixed;top : 100px;z-index : 999;" aria-label="Dashboard Menu Clickable">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                         <div tabindex="0" style="overflow: hidden; outline: none;" id="sidebar1" class="nav-collapse ">
+                             <div class="user-panel user-panel-marg">
+                                 <!-- Tab panes -->
+                                 <div class="tab-content">
+                                     <div class="tab-pane active" id="user">
+                                         <div class="image">                                         
+                                             <img src="resources/images/user-profile.jpg" class="img-circle" alt="">
+                                         </div>
+                                         <div class="info wht-color">
+                                             <p><span data-i18n="dashBoard.db_hello">Hello</span></p><p><span>{{displayname}}</span></p>
+                                             <!--<small style="color: #eee;" data-i18n="dashBoard.db_wel_back">Welcome Back</small>-->
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <ul class="nav nav-tabs nav-tabs-paddng nav_res_profile" role="tablist">
+                                     <!-- 			                        <li><a href="#route_changepassword" role="tab" data-toggle="tab" aria-label="Change Password"><i class="fa fa-pencil-square-o wht-color"></i></a></li>
+                     -->
+									<li><a href="#/route_profile" role="tab" data-toggle="tab" aria-label="View Profile"><i class="fa fa-pencil wht-color" aria-hidden="true"></i></a></li>
+									<li><a href="#/route_changepwd" role="tab" data-toggle="tab" aria-label="Change Password"><i class="fa fa-pencil-square-o wht-color"></i></a></li>
+                                     <li data-ng-controller="stu_Dash_logout">
+                                         <a data-ng-click="invalidateLogin()" role="tab" data-toggle="tab" aria-label="Logout">
+                                             <i class="fa fa-power-off wht-color"></i>
+                                         </a>
+                                     </li>
+                                 </ul>
+                             </div>
+                             <ul class="sidebar1-menu" id="nav-accordion1" role="navigation">
+                                 <li>
+                                     <!-- <a href="#/route_inst_dashboard"> -->
+                                     <a href="#/welcomeInstitute" class="active">
+                                         <i class="fa fa-bullhorn"></i><span data-i18n="header.header_home">Home</span>
+                                     </a>
+                                 </li>
+                                 <!--  <li>
+                                     <a href="javascript:;" ng-click="showDashboardInst('showInstNotification');">
+                                         <i class="fa fa-bullhorn"></i><span data-i18n="ResDashboard.ResDashboard_notification">Notifications</span>({{instNotificationCount}})
+                                     </a>
+                                 </li> -->
+                                 <li>
+                                     <!-- <a href="#/route_inst_dashboard"> -->
+                                     <!-- <a href="javascript:;" ng-click="showDashboardInst('showInstPending');"> -->
+                                     <a href="#/route_pendingApp" >
+                                         <i class="fa fa-exclamation-circle"></i><span data-i18n="ResDashboard.ResDashboard_pending">Pending For Actions</span>({{instPendingActionCount}})
+                                     </a>
+                                 </li>                              
+                                 <li class="sub-menu dcjq-parent-li">
+                                     <a class="dcjq-parent" href="javascript:;">
+                                         <i class="fa fa-tasks"></i>
+                                         <span data-i18n="dashBoard.db_apptrack" aria-label="Application Tracker">Application Tracker</span>
+                                         <span class="dcjq-icon"></span>                                         
+                                     </a>
+                                 <!--     <ul style="display: none;" class="sub">
+                                         <li><a href="javascript:;" ng-click="showAppTrack('showApproved');"><span data-i18n="ResDashboard.ResDashboard_Approved">Approved</span></a></li>
+                                         <li><a href="javascript:;" ng-click="showAppTrack('showSanctioned');"><span data-i18n="ResDashboard.ResDashboard_Sanctioned">Sanctioned</span></a></li>
+                                         <li><a href="javascript:;" ng-click="showAppTrack('showDisbursed');"><span data-i18n="ResDashboard.ResDashboard_Disbursed">Disbursed</span></a></li>
+                                         <li><a href="javascript:;" ng-click="showAppTrack('showRejected');"><span data-i18n="ResDashboard.ResDashboard_Rejected">Rejected</span></a></li>
+                                     </ul> -->
+                                     
+                                         <ul style="display: none;" class="sub">
+                                         <li><a href="#/route_approvedApp" ><span data-i18n="ResDashboard.ResDashboard_Approved">Approved</span>({{approvedAppCount}})</a></li>
+                                         <li><a href="#/route_sanctionedApp" ><span data-i18n="ResDashboard.ResDashboard_Sanctioned">Sanctioned</span>({{sanctionedAppCount}})</a></li>
+                                         <li><a href="#/route_disbursedApp" ><span data-i18n="ResDashboard.ResDashboard_Disbursed">Disbursed</span>({{disbursedAppCount}})</a></li>
+                                         <li><a href="#/route_rejectedApp" ><span data-i18n="ResDashboard.ResDashboard_Rejected">Rejected</span>({{rejectedAppCount}})</a></li>
+                                         <li><a href="#/route_instAppTrack" ><span data-i18n="dashBoard.db_apptrack">Application Tracker</span></a></li>
+                                     </ul>
+                                     
+                                 </li>
+                                 <!-- <li>
+                                     <a href="javascript:;" ng-click="showDashboardInst('showInstMis');">
+                                         <i class="fa fa-pie-chart"></i><span data-i18n="ResDashboard.ResDashboard_reports">MIS Reports</span>
+                                     </a>
+                                 </li> -->
+                                 <li>
+                                     <a href="#/route_instMisReport">
+                                         <i class="fa fa-pie-chart"></i><span data-i18n="ResDashboard.ResDashboard_reports">MIS Reports</span>
+                                     </a>
+                                 </li>
+                                  <li class="sub-menu dcjq-parent-li">
+                                     <span ng-click="OpenGrievance();">
+                                     <a class="dcjq-parent">
+                                         <i class="fa fa-gavel"></i>
+                                         <span data-i18n="header.header_grievance" aria-label="Grievance">Grievance</span>
+                                     </a>
+                                     </span>
+                                 </li> 
+                                 
+                                 
+                                 <!--  College modification   -->
+                                 
+                                  <li class="sub-menu dcjq-parent-li" ng-show = "prinipalProfileshowhide">
+                                     <a class="dcjq-parent" href="javascript:;">
+                                         <i class="fa fa-tasks"></i>
+                                         <span data-i18n="collegeschool.adminModule" aria-label="Admin module">Admin module</span>
+                                         <span class="dcjq-icon"></span>                                         
+                                     </a>
+                                     <ul style="display: none;" class="sub" >
+                                         <li><a href="#/route_updateProfile" ><span data-i18n="collegeschool.updateProfile"> Update Profile</span></a></li>
+                                         <li><a href="#/route_viewCourseFeeforCollege" ><span data-i18n="collegeschool.viewCoursefee"> View Course & Fee</span></a></li>
+                                         <li><a href="#/route_updateCourseFeeforCollege" ><span data-i18n="collegeschool.ModifyOldCourse">Modify Old Course</span></a></li>
+                                         <li><a href="#/route_addCourseFeeforCollege" ><span data-i18n="collegeschool.addNewCourse">Add New Course</span></a>
+                                         </li>
+                                      </ul>
+                                 </li>
+                                 
+                                  <li class="sub-menu dcjq-parent-li" ng-show = "headmasterProfileshowhide">
+                                     <a class="dcjq-parent" href="javascript:;">
+                                         <i class="fa fa-tasks"></i>
+                                         <span data-i18n="collegeschool.adminModule" aria-label="Admin module">Admin module</span>
+                                         <span class="dcjq-icon"></span>                                         
+                                     </a>
+                                     <ul style="display: none;" class="sub" >
+                                         <li><a href="#/route_updateProfile" ><span data-i18n="collegeschool.updateProfile"> Update Profile</span></a></li>
+                                     </ul>
+                                 </li>
+                                 
+                                 <!--  College modification  end  -->
+                                 
+                                 
+                                   <!--Added by Swati For User Manual
+	                                 <li class="sub-menu dcjq-parent-li">
+	                                     <a class="dcjq-parent" href="javascript:;">
+	                                         <i class="fa fa-book"></i>
+	                                         <span data-i18n="dashBoard.db_usermanual">User Manual</span>
+	                                         <span class="dcjq-icon"></span>
+	                                     </a>
+	                                     <ul style="display: none;" class="sub">
+	                                         <li><a ng-click="showApplyScheme('showCheckElig');"><span data-i18n="dashBoard.db_usermanualdownld">Download User Manual</span></a></li>
+	                                     </ul>
+	                                 </li>
+	                                 Added by Swati For User Manual End-->
+	                                 
+                                 <!--<li class="sub-menu dcjq-parent-li">
+                                     <a class="dcjq-parent" href="#/inst_grievance">
+                                         <i class="fa fa-bar-chart-o"></i>
+                                         <span data-i18n="header.header_grievance">Grievance</span>
+                                     </a>
+                                 </li>
+                                 <li class="sub-menu dcjq-parent-li">
+                                     <a class="dcjq-parent" href="#/inst_grievance">
+                                         <i class="fa fa-tasks"></i>
+                                         <span data-i18n="dashBoard.db_bill">Bill</span>
+                                     </a>
+                                 </li>
+                                 <li class="sub-menu dcjq-parent-li">
+                                     <a class="dcjq-parent" href="#/inst_grievance">
+                                         <i class="fa fa-tasks"></i>
+                                         <span data-i18n="dashBoard.db_ecs">ECS</span>
+                                     </a>
+                                 </li>
+
+                                 <li class="sub-menu dcjq-parent-li">
+                                     <a class="dcjq-parent" href="#/inst_grievance">
+                                         <i class="fa fa-child"></i>
+                                         <span data-i18n="header.header_rti">RTI</span>
+                                     </a>
+                                 </li>-->
+
+
+                             </ul>
+
+                         </div>
+                     </div>     				
+     			</div>
+     			
+     		</div>
+     		
+    		<!-- start:content -->
+			<Main ng-view class="container">
+				<!-- page view -->                  
+             </Main>
+      		
+      		 <Footer  ng-show="homeId" class="container" role="contentinfo">
+                    <div id="footer" class="col-lg-12">                   
+                            <ul class="footerlinks">
+                                <li class="active"><a href="#/" ng-click="FlipCenterDivContent('home');"><span data-i18n="header.header_home">Home</span></a></li>
+                                <li><a href="" ng-click="FlipCenterDivContent('rti');"><span data-i18n="header.header_rti">RTI</span></a></li>
+                                <li><a href="" ng-click="FlipCenterDivContent('grievance');"><span data-i18n="header.header_grievance">Grievance</span></a></li>
+                                <li class="news"><a href="" ng-click="FlipCenterDivContent('knowledgebank');"><span data-i18n="header.header_knowledge">Knowledge Bank</span></a></li>
+                                <li class="news"><a href="{{dbtDocumentPath}}/DBTDocs/Flipbook_new/mobile/index.html" target="_blank"><span data-i18n="header.header_help">Help</span></a></li>
+                                <li class="news"><a href="" ng-click="FlipCenterDivContent('faq');"><span data-i18n="header.header_faq">FAQ</span></a></li>
+                                <li class="navlast"><a href="" ng-click="FlipCenterDivContent('aboutus');"><span data-i18n="header.header_aboutus">About US</span></a></li>
+                               <!--  <li class="navlast"><a href="#/collegeSchoolRegistration"><span data-i18n="collegeschool.newInstituteReg">New Institute Registration</span></a></li> -->
+                            </ul>                    
+                    </div>
+                   <div class="col-lg-12 copyright" id="footercopyright">
+                        <div class="col-md-6 col-sm-6">
+                            <p style="text-align:left" >
+                           <img src="resources/images/logo1.png" style="display:inline; width:8%" />Created by MahaIT</p>
+                            </div>
+
+                         <div class="col-md-6 col-sm-6">
+                            <p style="text-align:right">&copy;
+                            <span style="text-align:right" data-i18n="header.footer_content">copyright 2018. All rights reserved.</span>                     
+                            </p>
+                            </div>                       
+                    </div>
+            
+    		</Footer>
+    	</section>
+    	
+    	<div  class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true" style="overflow:hidden;">
+		<div class="modal-dialog">
+	    	<div class="modal-content login-modal">
+	      		<div class="modal-header login-modal-header" style="background-color: #035987;">
+	        		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        		<h4 class="modal-title text-center" id="loginModalLabel"><span style="color:#fff;" >Alert</span></h4>
+	      		</div>
+	      		<div class="modal-body">
+	      			<div class="text-center">
+		      			<div role="tabpanel" class="login-tab">
+						  	<!-- Nav tabs -->
+						  
+						
+						  	<!-- Tab panes -->
+							<div class="tab-content" >
+								<div role="tabpanel" class="tab-pane active text-center" id="home"><br>
+						    		
+						    		<div class="clearfix"></div>
+						    		
+										<div class="form-group">
+											<div class="input-group"  style="margin: auto;">
+												<span>{{alert}}</span>
+											</div>
+										</div>									
+						    	</div>
+						 
+							  	</div>
+							</div>
+		      			</div>
+		      		</div>
+		    	</div>
+		   </div>
+	 	</div>
+    	
+    	
+    	
+    	  <script type="text/javascript">
+        $('#cssmenu > ul.navi1 li').click(function (e) {
+            $('.navi li.navactive').removeClass('navactive');
+            var $this = $(this);
+            $this.addClass('navactive');
+        });
+    	</script>
+
+        <script type="text/javascript">
+  				$("#skiptomain").click(function() {
+			 $('html, body').animate({
+       		 	scrollTop: $("#topnavigation").offset().top
+   			 	}, 500);
+			});
+  		</script>
+  
+     
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="js/jquery_006.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery_007.js"></script>
+    <script src="js/jquery_003.js"></script>
+    <script src="js/jquery_004.js"></script>
+   
+    <script src="scripts/customModule.js"></script>
+    <script src="scripts/captcha.js"></script>
+   	<script src="scripts/customScripts.js"></script>
+    <script src="scripts/customControllers.js"></script>
+    <script src="scripts/customDirectives.js"></script>
+    <script src="scripts/customServices.js"></script>
+    
+    <script src="scripts/forms.js"></script>
+	<script src="scripts/commonValidation.js"></script>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/alertConfig.js"></script>
+
+    <!-- <script type="text/javascript" src="js/jquery.dataTables.min.js"></script> -->
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="js/DT_bootstrap.js"></script> 
+    <script src="js/jquery.js"></script>
+    <!--right slidebar-->
+    <script src="js/slidebars.js"></script>
+    <!--common script for all pages-->
+    <script src="js/common-scripts.js"></script>
+    <script src="js/font_size.js"></script>
+    <script src="js/loadingoverlay.min.js"></script>
+    <script src="js/loadingoverlay_progress.min.js"></script>
+    <script type="text/javascript" src="resources/js/jquery.smartWizard.js"></script>
+   
+    
+</body>
+</html>
